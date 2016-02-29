@@ -1,2 +1,4 @@
 language: java
-
+before_install:
+- openssl aes-256-cbc -K $encrypted_8638cc861ec4_key -iv $encrypted_8638cc861ec4_iv
+  -in application.yml.enc -out application.yml -d
