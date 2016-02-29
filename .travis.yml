@@ -1,1 +1,4 @@
-language : java
+language: java
+before_install:
+- openssl aes-256-cbc -K $encrypted_18489afd5970_key -iv $encrypted_18489afd5970_iv
+  -in src\\main\\resources\\application.yml.enc -out src\\main\\resources\\application.yml -d
